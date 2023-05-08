@@ -1,0 +1,222 @@
+body {
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+   
+   
+    font-family: 'Permanent Marker', cursive;
+    /* sacado de googlefonts tambien hay en html
+    https://fonts.google.com/specimen/Permanent+Marker */
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Paleta de colores aprox https://www.blissworld.com/ */
+
+
+header, main, aside, footer {
+    padding: 0em;
+   
+}
+
+
+header {
+    background-color: #BBA6DD;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: flex;
+    width: 100%;
+
+
+    position: fixed;
+
+
+}
+
+
+nav {
+    float: left;
+ 
+}
+nav ul {
+    float: left;
+    margin-bottom: 0px;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0%;
+     
+}
+nav ul a:hover {
+    color:#d37f11;
+    font-size: 1.1em;
+    }
+
+
+header a {
+    text-decoration: none;
+ 
+}
+main div {
+    background-color:  rgba(59, 130, 246, .5);
+}
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-color: rgba(59, 130, 246, .5);
+    font-size: 0.4em;
+}
+main {
+    margin-top: 5%;
+    margin-left: 0%;
+    padding-left: 10%;
+    background-color: rgba(59, 130, 246, .5);
+    flex-grow: 1;
+    padding-top: 166px;
+    height: 850px;
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
+    ,url("/grupo-amigos-bailando-dia-soleado-al-aire-libre.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+main h1 {
+    color: azure;
+    font-size: 2.5em;
+}
+aside {
+    background-color: #584d8f;
+    flex-direction: row;
+    padding-top: 230px;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+
+
+.lineup {
+    height: 1200px;
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
+    ,url("/cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+}
+.lineup h1{
+    color: azure;
+    font-size: 1em;
+}
+.lineup h3{
+    color: azure;
+    font-size: 1em;
+}
+.lineup p{
+    color: azure;
+    font-size: 1em;
+}
+.entradas {
+    height: 1100px;
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
+    ,url("/par-pie-multitud-festival-musica.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    padding-left: 10%;
+    background-color:  rgba(59, 130, 246, .5);
+
+
+}
+.entradas h1 {
+    color: azure;
+    font-size: 1em;
+}
+
+
+.entradas label{
+    color: azure;
+    font-size: 1em;
+}
+.ubicacion {
+    height: 1100px;
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
+    ,url("/festival-musica-verano-que-atrae-mucha-gente.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;
+    padding-left: 10%;
+    background-color:  rgba(59, 130, 246, .5);
+
+
+}
+.ubicacion h1 {
+    color: azure;
+    font-size: 1em;
+}
+.contacto{
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+        background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
+        ,url("/audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio.jpg") ;
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: center center;
+        padding-left: 10%;
+        background-color:  rgba(59, 130, 246, .5);
+   
+    }
+    .contacto h1 {
+        color: azure;
+        font-size: 1em;
+    }
+    .contacto label {
+        color: azure;
+        font-size: 1em;
+    }
+footer {
+    background-color: #8cd0e3;
+    margin-left: 0%;
+    padding-left: 10%;
+    display: flex;
+   
+    }
+    footer ul{
+        color:rgba(131, 3, 151, 0.839);
+      text-decoration: none;
+    }
+   
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    aside{
+        width: 25vw;}
+
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+   
+    }
+    nav ul {
+        display: flex;
+     
+    }
+    nav li {
+        padding: 0 .5em;
+   
+    }
+    .btn-menu {
+        display: none;
+    }
+    .menu-hidden{
+        display: block;
+    }
+   
+    }
