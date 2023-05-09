@@ -74,7 +74,7 @@ main {
     padding-top: 166px;
     height: 850px;
     background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("/grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg") ;
+    ,url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg") ;
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center;
@@ -94,7 +94,7 @@ aside {
 .lineup {
     height: 1200px;
     background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("/cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
+    ,url("cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center; 
@@ -113,10 +113,10 @@ aside {
 }
 .entradas {
     height: 1100px;
-    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("/par-pie-multitud-festival-musica-min.jpg") ;
+    background-image: linear-gradient(90deg,rgb(0,0,0,1),rgb(0,0,0,0.1))
+    ,url("par-pie-multitud-festival-musica-min.jpg") ;
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     background-position: center center;
     padding-left: 10%;
     background-color:  rgba(59, 130, 246, .5);
@@ -133,13 +133,13 @@ aside {
 }
 .ubicacion {
     height: 1100px;
-    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("/festival-musica-verano-que-atrae-mucha-gente-min.jpg") ;
+    background-image: linear-gradient(0deg,rgb(0,0,0, 0.5),rgb(0,0,0,0.5))
+    ,url("festival-musica-verano-que-atrae-mucha-gente-min.jpg") ;
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center;
     padding-left: 10%;
-    background-color:  rgba(59, 130, 246, .5);
+    background-color:  rgba(59, 130, 246, 0.9);
 
 }
 .ubicacion h1 {
@@ -151,7 +151,7 @@ aside {
         flex-direction: column;
         height: 1100px;
         background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,.5))
-        ,url("/audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg") ;
+        ,url("audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg") ;
         background-repeat: no-repeat;
         background-size: cover ;
         background-position: center center;
