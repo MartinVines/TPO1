@@ -12,19 +12,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- fontawesome sacada de aquí también hay en CSS https://fonts.google.com/specimen/Permanent+Marker -->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <div>
+    <div class="container"> 
+        <!-- agregado v6 container -->
         <header>
+         
              <div class="logo"><img src="logo.png" alt="LOGO" width="150px">
              </div>
-            <nav class="menu-hidden">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#lineup">Lineup</a></li>
-                    <li><a href="#entradas">Entradas</a></li>
-                    <li><a href="#ubicacion">Como llegar</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+             <!-- agregador v6 menu hamburguesa -->
+             <input type="checkbox" id="menuHamburguesa-check">
+                <label id="menuHamburguesa" for="menuHamburguesa-check">
+                    <span id="menuHamburguesa-abrir"> &#9776;</span>
+                    <span id="menuHamburguesa-cerrar">X</span>
+                </label>
+       
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#lineup">Lineup</a></li>
+                        <li><a href="#entradas">Entradas</a></li>
+                        <li><a href="#ubicacion">Como llegar</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+        
+  
             
         </header>
         <Section id="inicio"></Section>
