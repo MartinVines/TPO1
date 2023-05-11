@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     font-size: 3em;
@@ -26,24 +26,26 @@ header {
     /* fondo temporario en verde para ver cambio responsive, despues de anula */
 
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     align-items: center;
-    position: flex;
     width: 100%;
     position: fixed;
 
 }
 
 nav {
-  float: left;
+  float: center;
+  width: 100%;
 }
 
 nav ul {
     float: left;
     margin-bottom: 0px;
-    padding-left: 0;
-    list-style-type: none;
+    padding-left: 5%;
+  
     margin-top: 0%;
+    font-size: 1.5em;
+ 
 }
 nav ul a:hover {
     color:#d37f11;
@@ -55,9 +57,8 @@ header a {
     font-size: 1em;
   
 }
-main div {
-    background-color:  rgba(59, 130, 246, .5);
-}
+
+
 /* *****************************
 menu hamburguesa responsive - inicio
 **************************** */
@@ -67,17 +68,20 @@ menu hamburguesa responsive - inicio
 }
 .menu ul li {
 display: block;
+height: 25px;
 }
 .menu ul li a {
     display: block;
-    padding: 0.5rem 0;
+    
     transition: all 0.4s linear;
-    border-radius: 5px;
+    font-size: 1rem;
+
+    
 }
 
 #menuHamburguesa {
     display: block;
-}
+    }
 
 #menuHamburguesa-check:not(:checked) ~ nav{
     display: none;
@@ -119,13 +123,13 @@ menu hamburguesa responsive - FIN
     font-size: 0.4em;
 }
 main {
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 0%;
     padding-left: 10%;
     background-color: rgba(59, 130, 246, .5);
     flex-grow: 1;
     padding-top: 166px;
-    height: 850px;
+    height: 550px;
     background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
     ,url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg") ;
     background-repeat: no-repeat;
@@ -134,38 +138,42 @@ main {
 }
 main h1 {
     color: azure;
-    font-size: 2.5em;
+    font-size: 1.55em;
 }
 aside {
     background-color: #584d8f;
     flex-direction: row;
-    padding-top: 230px;
+    padding-top: 10px;
     padding-left: 8%;
     padding-right: 0%;
 }
 
 .lineup {
-    height: 1200px;
+    
+    height: 715px;
     background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
     ,url("cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center; 
+    padding-left: 10%;
 }
 .lineup h1{
+   
+    margin: 0;
     color: azure;
     font-size: 1em;
 }
 .lineup h3{
     color: azure;
-    font-size: 1em;
+    font-size: 2rem;
 }
 .lineup p{
     color: azure;
-    font-size: 1em;
+    font-size: 2rem;
 }
 .entradas {
-    height: 1100px;
+    height: 715px;
     background-image: linear-gradient(90deg,rgb(0,0,0,1),rgb(0,0,0,0.1))
     ,url("par-pie-multitud-festival-musica-min.jpg") ;
     background-repeat: no-repeat;
@@ -173,19 +181,21 @@ aside {
     background-position: center center;
     padding-left: 10%;
     background-color:  rgba(59, 130, 246, .5);
-
+    padding-left: 10%;
+    font-size: 2rem;
+    
 }
 .entradas h1 {
     color: azure;
-    font-size: 1em;
+    font-size: 2.5rem;
 }
 
 .entradas label{
     color: azure;
-    font-size: 1em;
+    font-size: 1.5rem;
 }
 .ubicacion {
-    height: 1100px;
+    height: 750px;
     background-image: linear-gradient(0deg,rgb(0,0,0, 0.5),rgb(0,0,0,0.5))
     ,url("festival-musica-verano-que-atrae-mucha-gente-min.jpg") ;
     background-repeat: no-repeat;
@@ -197,13 +207,13 @@ aside {
 }
 .ubicacion h1 {
     color: azure;
-    font-size: 1em;
+    font-size: 2rem;
 }
 .contacto{
         display: flex;
         flex-direction: column;
-        height: 1100px;
-        background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,.5))
+        height: 750px;
+        background-image: linear-gradient(90deg,rgb(0,0,0,1),rgb(0,0,0,0.1))
         ,url("audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg") ;
         background-repeat: no-repeat;
         background-size: cover ;
@@ -237,32 +247,59 @@ footer {
     .container {
         flex-direction: row;
     }
+    main {
+        width: 75vw;
+    }
     aside{
-        width: 25vw;}
+        width: 25vw;
+        padding-top: 185px;
+    }
 
     header {
-        flex-direction: row;
+        
+        flex-direction: center;
         justify-content: space-between;
 
     }
     header {
         background-color: #BBA6DD;}
-    
+
         nav ul {
         display: flex;
      
     }
     nav li {
-        padding: 0 .5em;
+        padding: 0.5em;
     
     }
-   
+    .menu ul li a {
+
+        font-size: 1.4rem;
+    
+        
+    }
+    .logo {
+    display: flex;
+
+    }
+    /* Pruebas para nav bar diribuido a la derecha del logo */
+   /* nav {
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+   }
+.encabezado {
+    justify-content: space-between;
+} */
+
+   /* +++++++++++++++++++++++++++ */
     .menu{
         display: block;
     }
     .menu ul{
         display: flex;
                    }
+ 
     #menuHamburguesa, #menu-check {
         display: none;
     }
