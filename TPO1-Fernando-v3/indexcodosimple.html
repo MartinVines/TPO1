@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codosimple</title>
+    <link rel="stylesheet" href="stylecodosimple.css">
+</head>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fontawesome sacada de aquí también hay en CSS https://fonts.google.com/specimen/Permanent+Marker -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <div class="container">
+        <!-- agregado v6 container -->
+        <header>
+
+            <div class="logo"><img src="logo.png" alt="LOGO" width="150px">
+            </div>
+            <!-- agregador v6 menu hamburguesa -->
+            <input type="checkbox" id="menuHamburguesa-check">
+            <label id="menuHamburguesa" for="menuHamburguesa-check">
+                <span id="menuHamburguesa-abrir"> &#9776;</span>
+                <span id="menuHamburguesa-cerrar">X</span>
+            </label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#lineup">Lineup</a></li>
+                    <li><a href="#entradas">Entradas</a></li>
+                    <li><a href="#ubicacion">Como llegar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+
+
+        </header>
+        <Section id="inicio"></Section>
+    </div>
+
+    <div class="container">
+
+
+        <div class="main">
+            <main>
+                <h1>Viví la experiencia CodoMusic 2023</h1>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/pvMMrTekpAE"
+                    title="Tomi Maluf - Existís Vos, Existo Yo (En vivo en La Trastienda)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h1>Los mejores artistas, vos y tus amigos</h1>
+            </main>
+        </div>
+      
+        <div class="aside">
+            <aside>
+                <div>
+                    <img src="Logo codo sponsors vertical.png" alt="Logo vertical" >
+                </div>
+            </aside>
+        </div>
+
+        <br>
+        <br>
+        <div class="lineup">
+            <h1>Lineup</h1>
+            <h3>Dia 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatum amet sint suscipit iusto
+                nam
+                dolor in ipsam! Vel minima voluptatum totam a culpa id itaque! Eligendi iste error quod?
+            </p>
+            <h3>Dia 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptatum amet sint suscipit iusto
+                nam
+                dolor in ipsam! Vel minima voluptatum totam a culpa id itaque! Eligendi iste error quod?
+            </p>
+
+
+        </div>
+
+
+        <div class="entradas">
+            <form>
+                <br>
+                <br>
+                <h1>Conseguí tu entrada aquí</h1>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name"><br><br> <label for="lastname">Apellido:</label>
+                <input type="text" name="lastname"><br><br> <label for="email">email:</label>
+                <input type="text" name="email"><br><br>
+                <label for="Consulta">Consulta:</label>
+                <input type="text" name="Consulta"><br><br>
+                <label for="opcion">Opcion:</label>
+                <input type="radio" name="opcion" id="opcion1" value="opcion1">
+                <label for="opcion1">opcion1</label>
+                <input type="radio" name="opcion2" id="opcion2" value="opcion2">
+                <label for="opcion2">opcion2</label> <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="ubicacion">
+            <br>
+            <br>
+            <h1>Como llegar</h1>
+            <iframe width="1200" height="750" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=playa reserva ecologica &t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+
+        <div class="contacto">
+            <div class="formulario">
+                <form>
+                    <br>
+                    <br>
+                    <h1>Contacto</h1>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name"><br><br> <label for="lastname">Apellido:</label>
+                    <input type="text" name="lastname"><br><br> <label for="email">email:</label>
+                    <input type="text" name="email"><br><br>
+                    <label for="Consulta">Consulta:</label>
+                    <input type="text" name="Consulta"><br><br>
+                    <label for="opcion">Opcion:</label>
+                    <input type="radio" name="opcion" id="opcion1" value="opcion1">
+                    <label for="opcion1">opcion1</label>
+                    <input type="radio" name="opcion2" id="opcion2" value="opcion2">
+                    <label for="opcion2">opcion2</label> <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: purple;">Info fechas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: purple;">Sponsors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: purple;">Prensa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: purple;">Términos y<br>condiciones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: purple;">Contacto</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <i class="fa-brands fa-instagram fa-beat"></i>
+                        <i class="fa-brands fa-tiktok fa-flip">COntactame</i>
+                        <script src="https://kit.fontawesome.com/3e91e1b75c.js" crossorigin="anonymous"></script>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-instagram fa-beat"></i>
+                <i class="fa-brands fa-tiktok fa-flip">COntactame</i>
+                <script src="https://kit.fontawesome.com/3e91e1b75c.js" crossorigin="anonymous"></script>
+                <!-- https://fontawesome.com/icons/tiktok?f=brands&s=solid --></p>
+                <!-- Seleccionar iconos con aniación o no de aquí
+                        https://fontawesome.com/search?f=brands&o=r -->
+            </div>
+            </section>
+</body>
+
+</html>
