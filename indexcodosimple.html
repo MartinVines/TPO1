@@ -74,8 +74,6 @@
             </aside>
         </div>
 
-        <br>
-        <br>
         <div class="lineup">
             <section id="lineup">
             <h1>Lineup</h1>
@@ -91,7 +89,7 @@
 
         <div class="entradas">
             <section id="entradas"></section>
-            <form>
+            <!-- <form>
                 <br>
                 <br>
                 <h1>Conseguí tu entrada aquí</h1>
@@ -107,20 +105,75 @@
                 <input type="radio" name="opcion2" id="opcion2" value="opcion2">
                 <label for="opcion2">opcion2</label> <br><br>
                 <input type="submit" value="Submit">
-            </form>
-        </section>
-        </div>
+            </form> -->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Conseguí tus entradas</h1>
+ <br>
+   <form id="form" class="form" action="https://formspree.io/f/xzbqwanv" method="POST">
+    <label for="Nombre">Nombre                      </label>
+    <input name="nombre" id="nombre" type="nombre">
+    <br>
+    <label for="Apellido">Apellido</label>
+    <input name="Apellido" id="Apellido" type="Apellido">
+    <br>
+    <label for="ntc">Número de Tarjeta de credito</label>
+    <input name="ntc" id="ntc" type="ntc">
+    <br>
+    <label for="VTC">Vencimiento TC</label>
+    <input name="VTC" id="VTC" type="VTC">
+    <br>
+    <label for="NS">Número de seguridad</label>
+    <input name="NS" id="NS" type="NS">
+    <br>
+    <br>
+  <button type="submit">Submit</button>
+</form>
+<script>
+  const $form = document.querySelector('#form')
 
-        <div class="ubicacion">
-            <section id="ubicacion">
+  $form.addEventListener('submit',handleSubmit);
+
+  async function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+          method: this.method,
+          body: form,
+          headers: {
+              'Accept': 'application/json'
+  }
+})
+if (response.ok) {
+  this.reset()
+  alert('Gracias por su compra, te esperamos')
+}    
+}
+</script>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <div class="ubicacion"> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <h1>Como llegar</h1>
-            <iframe width="100%" height="750" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=playa reserva ecologica &t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </section>
+            <iframe width="1000px" height="400px" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=playa reserva ecologica &t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
+        </section>
+        </div>
+      
 
         <div class="contacto">
             <section id="contacto">

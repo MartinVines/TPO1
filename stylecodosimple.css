@@ -188,6 +188,7 @@ main h1 {
     width: 100%;
     flex-direction: colum;
     text-align: center;
+    padding-left: 10%;
     animation: animate_bounce 3'' timing-function 3 iteration-count direction fill-mode;
 }
 
@@ -391,6 +392,7 @@ footer ul {
     .entradas {
         width: 100%;
         padding-right: 20px;
+       
     }
 
     .lineup {
@@ -401,6 +403,7 @@ footer ul {
     .ubicacion {
         width: 100%;
         padding-right: 20px;
+       
     }
 
     iframe {
