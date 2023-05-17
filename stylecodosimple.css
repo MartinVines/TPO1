@@ -4,25 +4,31 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 3em;
-    
-   
+
+
     font-family: 'Permanent Marker', cursive;
     /* sacado de googlefonts tambien hay en html
     https://fonts.google.com/specimen/Permanent+Marker */
 }
-html{
+
+html {
     scroll-behavior: smooth;
+    min-width: 600px;
 }
+
 /* Paleta de colores aprox https://www.blissworld.com/ */
 
-header, main, aside, footer {
+header,
+main,
+aside,
+footer {
     padding: 0em;
-   
+
 }
 
 header {
-    background-color: navajowhite;
-    background-color: navajowhite;
+
+    background-color: white;
     /* fondo temporario en verde para ver cambio responsive, despues de anula */
 
     display: flex;
@@ -35,8 +41,13 @@ header {
 
 }
 
+.logo {
+    width: 100%;
+    max-width: 100px;
+}
+
 nav {
-  float: left;
+    float: left;
 }
 
 nav ul {
@@ -46,19 +57,23 @@ nav ul {
     list-style-type: none;
     margin-top: 0%;
 }
+
 nav ul a:hover {
-    color:#d37f11;
+    color: #d37f11;
     font-size: 1.1em;
-    }
+}
 
 header a {
     text-decoration: none;
     font-size: 1em;
-  
+
 }
+
 main div {
-    background-color: navajowhite;
+    /* background-color: white; */
+    /* background-color: navajowhite; */
 }
+
 /* *****************************
 menu hamburguesa responsive - inicio
 **************************** */
@@ -66,9 +81,11 @@ menu hamburguesa responsive - inicio
 .menu ul {
     display: block;
 }
+
 .menu ul li {
-display: block;
+    display: block;
 }
+
 .menu ul li a {
     display: block;
     padding: 0.5rem 0;
@@ -80,32 +97,37 @@ display: block;
     display: block;
 }
 
-#menuHamburguesa-check:not(:checked) ~ nav{
+#menuHamburguesa-check:not(:checked)~nav {
     display: none;
 }
-#menuHamburguesa-check:checked ~ nav{
+
+#menuHamburguesa-check:checked~nav {
     display: block;
-} 
-#menuHamburguesa-check {
-    display: none; 
 }
+
+#menuHamburguesa-check {
+    display: none;
+}
+
 #menuHamburguesa:hover {
     color: aqua;
 }
 
-#menuHamburguesa-check:checked ~ label #menuHamburguesa-abrir {
+#menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
     display: none;
 }
-#menuHamburguesa-check:checked ~ label #menuHamburguesa-cerrar {
+
+#menuHamburguesa-check:checked~label #menuHamburguesa-cerrar {
     display: block;
 }
 
-#menuHamburguesa-check:not(:checked) ~ label #menuHamburguesa-abrir {
+#menuHamburguesa-check:not(:checked)~label #menuHamburguesa-abrir {
     display: block;
 }
-#menuHamburguesa-check:not(:checked) ~ label #menuHamburguesa-cerrar {
+
+#menuHamburguesa-check:not(:checked)~label #menuHamburguesa-cerrar {
     display: none;
-} 
+}
 
 /* *****************************
 menu hamburguesa responsive - FIN
@@ -116,285 +138,378 @@ menu hamburguesa responsive - FIN
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    background-color: navajowhite ;
+    /* background-color: navajowhite; */
+    background-color: white;
     font-size: 0.4em;
     flex-wrap: nowrap;
 }
+
 .main {
     margin-top: 5%;
     margin-left: 0%;
     padding-left: 5%;
-    /* padding-right: 10%; */
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
+    /* background-color: azure; */
     flex-grow: 1;
- flex-direction: row;
+    flex-direction: row;
     padding-top: 166px;
     height: 850px;
     width: 100%;
-    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg") ;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     background-position: center center;
-    /* background-size: contain; */
-    /* position: relative; */
-
+    text-align: center;
 }
+
 main h1 {
     color: azure;
     font-size: 2.5em;
 }
-/*.aside {
-    
-display: none; 
-}*/
+
+.aside {
+
+    /* background-color: navajowhite; */
+    /* background-color: azure; */
+    padding-left: 0%;
+}
+
+.publicidad-vertical {
+    display: none;
+}
 
 .lineup {
     height: 1200px;
-    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5))
-    ,url("cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
-    background-position: center center; 
+    background-size: cover;
+    background-position: center center;
     /* bakgrcound-size: contain; */
     width: 100%;
-   flex-direction: colum ;
+    flex-direction: colum;
+    text-align: center;
+    animation: animate_bounce 3'' timing-function 3 iteration-count direction fill-mode;
 }
-.lineup h1{
+
+.lineup h1 {
     color: azure;
-    font-size: 1em;
+    font-size: 3em;
 }
-.lineup h2{
+
+.lineup h2 {
     color: azure;
-    font-size: 1em;
+    font-size: 3em;
 }
-.lineup p{
+
+.lineup p {
     color: azure;
-    font-size: 1em;
+    font-size: 3em;
 }
+
 .entradas {
     height: 1100px;
-    background-image: linear-gradient(90deg,rgb(0,0,0,1),rgb(0,0,0,0.1))
-    ,url("par-pie-multitud-festival-musica-min.jpg") ;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.1)), url("par-pie-multitud-festival-musica-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     /* background-size: contain; */
     padding-left: 10%;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
+    /* background-color: azure; */
     flex-direction: colum;
-width: 100%;
+    width: 100%;
 }
+
 .entradas h1 {
     color: azure;
     font-size: 1em;
 }
 
-.entradas label{
+.entradas label {
     color: azure;
     font-size: 1em;
 }
+
 .ubicacion {
     height: 1100px;
-    background-image: linear-gradient(0deg,rgb(0,0,0, 0.5),rgb(0,0,0,0.5))
-    ,url("festival-musica-verano-que-atrae-mucha-gente-min.jpg") ;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("festival-musica-verano-que-atrae-mucha-gente-min.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     background-position: center center;
     /* background-size: contain; */
     padding-left: 5%;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
+    /* background-color: azure; */
     width: 100%;
     /* position: relative; */
+    text-align: center;
 
 }
-iframe{
-   width: 100%;
-   height: 240px;
+
+iframe {
+    width: 90%;
+    height: 360px;
 }
+
 .ubicacion h1 {
     color: azure;
     font-size: 1em;
 }
-.contacto{
-        display: flex;
-        flex-direction: column;
-        height: 1100px;
-        background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,.5))
-        ,url("audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg") ;
-        background-repeat: no-repeat;
-        background-size: cover ;
-        background-position: center center;
-        /* background-size: contain; */
-        padding-left: 10%;
-        background-color: navajowhite;
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url("audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-size: contain; */
+    padding-left: 10%;
+    /* background-color: navajowhite; */
+
     width: 100%;
-    }
-    .contacto h1 {
-        color: azure;
-        font-size: 1em;
-    }
-    .contacto label {
-        color: azure;
-        font-size: 1em;
-    }
+}
+
+.contacto h1 {
+    color: azure;
+    font-size: 1em;
+}
+
+.contacto label {
+    color: azure;
+    font-size: 1em;
+}
+
 footer {
     background-color: #8cd0e3;
     margin-left: 0%;
     padding-left: 10%;
     display: flex;
-        }
+}
 
-    footer ul{
-        color:rgba(131, 3, 151, 0.839);
-      text-decoration: none;
-    }
-  
+footer ul {
+    color: rgba(131, 3, 151, 0.839);
+    text-decoration: none;
+}
+
 @media (min-width: 768px) {
     .container {
         flex-direction: column;
+        background-color: white;
+        /* background-color: navajowhite; */
     }
-    
+
+    header {
+        /* background-color: navajowhite; */
+        background-color: white;
+        /* fondo temporario en verde para ver cambio responsive, despues de anula */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: flex;
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    nav ul {
+        display: flex;
+        font-size: 1.73em;
+
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+
+    #menuHamburguesa {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~nav {
+        display: none;
+    }
+
+    #menuHamburguesa-check:checked~nav {
+        display: block;
+    }
+
+    #menuHamburguesa-check {
+        display: none;
+    }
+
+    #menuHamburguesa:hover {
+        color: aqua;
+    }
+
+    #menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
+        display: none;
+    }
+
+    #menuHamburguesa-check:checked~label #menuHamburguesa-cerrar {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~label #menuHamburguesa-abrir {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~label #menuHamburguesa-cerrar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        padding-right: 20px;
+
+    }
+
+    .contacto {
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .entradas {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .lineup {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .ubicacion {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 480px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .container {
+        flex-direction: column;
+        background-color: white;
+    }
+
     header {
         flex-direction: row;
         justify-content: space-between;
 
+
+        /* background-color: navajowhite */
     }
-    header {
-        background-color: navajowhite}
-    
-        nav ul {
+
+    .logo {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    nav ul {
         display: flex;
-     
+        font-size: 1.73em;
+
     }
+
     nav li {
         padding: 0 .5em;
-    
+
     }
-   
-    .menu{
+
+    .menu {
         display: block;
     }
-    .menu ul{
+
+    .menu ul {
         display: flex;
-                   }
-    #menuHamburguesa, #menu-check {
+    }
+
+    #menuHamburguesa,
+    #menu-check {
         display: none;
     }
-    #menuHamburguesa-check:not(:checked) ~ nav{
+
+    #menuHamburguesa-check:not(:checked)~nav {
         display: block;
     }
-    #menuHamburguesa-check:checked ~ nav{
+
+    #menuHamburguesa-check:checked~nav {
         display: block;
-    } 
-   .aside{ background-color: navajowhite;
-    flex-direction: row;
-    padding-top: 25px;
-    padding-left: 2%;
-    padding-right: 0%;
-    width: 18%;
-    height: 100%;
-    position: fixed;
-    top: 157px;
-    right: 0;}
-    .main{
+    }
+
+    .aside {
+        background-color: white;
+        flex-direction: row;
+        padding-top: 25px;
+        padding-left: 2%;
+        padding-right: 0%;
+        width: 18%;
+        height: 100%;
+        position: fixed;
+        top: 157px;
+        right: 0;
+        background-image: none;
+    }
+
+    .publicidad-horizontal {
+        display: none;
+    }
+
+    .publicidad-vertical {
+        display: flex;
+    }
+
+    .main {
         width: 75%;
         padding-right: 20px;
 
     }
-    .contacto{width: 75%;
-        padding-right: 10%;}
-    .entradas{width: 75%;
-        padding-right: 20px;}
-    .lineup{width: 75%;
-        padding-right: 20px;}
-    .ubicacion{width: 75%;
-        padding-right: 20px;}
-    iframe{ 
-        width: 100%;
+
+    .contacto {
+        width: 75%;
+        padding-right: 10%;
+    }
+
+    .entradas {
+        width: 75%;
+        padding-right: 20px;
+    }
+
+    .lineup {
+        width: 75%;
+        padding-right: 20px;
+    }
+
+    .ubicacion {
+        width: 75%;
+        padding-right: 20px;
+    }
+
+    iframe {
+        width: 90%;
         height: 480px;
     }
 }
-/*footer*/
-
-
-footer {
-   
-    background-color: lightslategray;
-  
-   /*  grid-column-start: 1;
-    grid-column-end: 6; 
-    grid-area: footer; */ 
-    border-style: none;
-    min-height: 20px;
-    margin: 0.1rem;
-    min-width: 5rem;
-    font-size: medium;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*text-align: center;*/ 
-  
-} 
-
-#footer ul {
-
-    text-decoration: none;
-    list-style-type: none;
-    color: navy;
-    display:inline-flex; 
-    flex-direction: row;
-    align-items: left; 
-    justify-content: space-between; 
-  
-    column-gap: 50px;
-
-}
-
-#footer ul a:hover {
-    color: violet;
-    font-size: 2em;
-    }
-
-#footer a {
-    text-decoration: none;
-    font-size: 1.5em;
-    list-style-type: none;
-  
-} 
-
-/*#Redes {
-
-    display: inline-flex;
-    justify-content: end;
-}*/ 
-
-
-
-#form {
-
-    background-color: gray;
-    color:aliceblue;
-   /* grid-column-start: 1;
-    grid-column-end: 6; 
-    grid-area: footer; */
-    border-style: none;
-    border: none;
-    min-height: 20px;
-    margin: 0.5rem;
-    min-width: 5rem;
-    display:inline;
-    font-size: medium;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* text-align: center;
-    align-items: center;  */
-} 
-
-
-    /* @media (max-windth:600px){ */
-        /* .logo {display: none;}
-        .aside{ display: none;}
-        .main { width: 100%;}
-        .lineup { width: 100%;}
-        .ubicacion { width: 100%;}
-        .contacto { width: 100%;}
-        .ubicacion {width: 100%;}
-    } */
