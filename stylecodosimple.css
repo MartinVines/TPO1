@@ -1,9 +1,8 @@
-
 html {
     scroll-behavior: smooth;
-    min-width: 600px;
+    /* min-width: 600px; */
     /*font-family: 'Quicksand', sans-serif;*/
-    font-family: 'Bruno Ace', cursive;
+
 }
 
 body {
@@ -12,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 3em;
-   /*font-family: 'Permanent Marker', cursive;
+    /*font-family: 'Permanent Marker', cursive;
     /* sacado de googlefonts tambien hay en html
     https://fonts.google.com/specimen/Permanent+Marker */
 }
@@ -29,7 +28,7 @@ aside {
 header {
 
     background-color: white;
-    /* fondo temporario en verde para ver cambio responsive, despues de anula */
+
 
     display: flex;
     flex-direction: column;
@@ -43,21 +42,25 @@ header {
 .logo {
     width: 100%;
     max-width: 100px;
-    animation: spin 5s infinite linear; 
+    animation: spin 5s infinite linear;
+    display: none;
 }
 
 
- @keyframes spin {
+@keyframes spin {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-    to {
-      transform: rotate(360deg);
-    } }
 
-    nav {
-       float:left;
+    to {
+        transform: rotate(360deg);
     }
+}
+
+nav {
+    float: left;
+}
+
 nav {
     float: left;
 }
@@ -78,14 +81,10 @@ nav ul a:hover {
 header a {
     text-decoration: none;
     font-size: 1em;
+    color: rgba(204, 4, 225, 255);
 
 }
- /* 
-main div {
-   background-color: white; */
-    /* background-color: navajowhite; 
-}
-*/
+
 /* *****************************
 menu hamburguesa responsive - inicio
 **************************** */
@@ -150,21 +149,21 @@ menu hamburguesa responsive - FIN
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    /* background-color: navajowhite; */
     background-color: white;
     font-size: 0.4em;
     flex-wrap: nowrap;
+
 }
 
 .main {
     margin-top: 5%;
     margin-left: 0%;
-    padding-left: 5%;
-    /* background-color: navajowhite; */
-    /* background-color: azure; */
+    padding-left: 10%;
+
     flex-grow: 1;
     flex-direction: row;
     padding-top: 166px;
+
     height: 850px;
     width: 100%;
     background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg");
@@ -180,14 +179,17 @@ main h1 {
 }
 
 .aside {
-
-    /* background-color: navajowhite; */
-    /* background-color: azure; */
+text-align: center;
     padding-left: 0%;
+    width: 100%;
 }
 
 .publicidad-vertical {
     display: none;
+}
+.publicidad-horizontal{
+    display: flex;
+    width: 100%;
 }
 
 .lineup {
@@ -196,7 +198,7 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* bakgrcound-size: contain; */
+
     width: 100%;
     flex-direction: colum;
     text-align: center;
@@ -225,11 +227,9 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* background-size: contain; */
+
     padding-left: 10%;
-    /* background-color: navajowhite; */
-    /* background-color: azure; */
-    flex-direction: colum;
+
     width: 100%;
 }
 
@@ -249,12 +249,11 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* background-size: contain; */
-    padding-left: 5%;
-    /* background-color: navajowhite; */
-    /* background-color: azure; */
+
+    padding-left: 10%;
+
     width: 100%;
-    /* position: relative; */
+
     text-align: center;
 
 }
@@ -277,11 +276,9 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* background-size: contain; */
-    padding-left: 10%;
-    /* background-color: navajowhite; */
 
-    /*width: 100%;*/
+    padding-left: 10%;
+    width: 100%;
 }
 
 .contacto h1 {
@@ -293,39 +290,45 @@ iframe {
     color: azure;
     font-size: 2em;
 }
-
+.formulario{
+    width: 80%;
+}
+.form{
+    width: 80%;
+}
 footer ul {
     color: rgba(131, 3, 151, 0.839);
     text-decoration: none;
 }
 
 footer {
-       background-color: #8cd0e3;
+    background-color: #8cd0e3;
     margin-left: 30px;
     padding-left: 30px;
     display: flex;
-   /*  grid-column-start: 1;
+    /*  grid-column-start: 1;
     grid-column-end: 6; 
-    grid-area: footer; */ 
+    grid-area: footer; */
     border-style: none;
     min-height: 20px;
     /*margin: 0.1rem;*/
+    width: 100%;
     min-width: 5em;
     font-size: medium;
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /*text-align: center;*/ 
-  
-} 
+    /*text-align: center;*/
+
+}
 
 #footer ul {
 
     text-decoration: none;
     list-style-type: none;
-    color: navy;
-    display:inline-flex; 
+    color: rgba(204, 4, 225, 255);
+    display: inline-flex;
     flex-direction: row;
-    align-items: left; 
-    justify-content: space-between;   
+    align-items: left;
+    justify-content: space-between;
     column-gap: 50px;
 
 }
@@ -333,27 +336,27 @@ footer {
 #footer ul a:hover {
     color: violet;
     font-size: 2em;
-    }
+}
 
 #footer a {
     text-decoration: none;
     font-size: 1.5em;
     list-style-type: none;
-  
-} 
+
+}
 
 /*#Redes {
 
     display: inline-flex;
     justify-content: end;
-}*/ 
+}*/
 
 
 #form {
 
     /*background-color: gray;*/
-    color:aliceblue;
-   /* grid-column-start: 1;
+    color: aliceblue;
+    /* grid-column-start: 1;
     grid-column-end: 6; 
     grid-area: footer; */
     border-style: none;
@@ -365,8 +368,8 @@ footer {
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    align-items: center; 
-} 
+    align-items: center;
+}
 
 /*#form {
 
@@ -392,13 +395,12 @@ footer {
     .container {
         flex-direction: column;
         background-color: white;
-        /* background-color: navajowhite; */
+
     }
 
     header {
-        /* background-color: navajowhite; */
         background-color: white;
-        /* fondo temporario en verde para ver cambio responsive, despues de anula */
+
 
         display: flex;
         flex-direction: column;
@@ -413,6 +415,7 @@ footer {
     .logo {
         width: 100%;
         max-width: 150px;
+        display: flex;
     }
 
     nav ul {
@@ -474,7 +477,7 @@ footer {
 
     .main {
         width: 100%;
-        padding-right: 20px;
+        padding-right: 10%;
 
     }
 
@@ -485,19 +488,19 @@ footer {
 
     .entradas {
         width: 100%;
-        padding-right: 20px;
-       
+        padding-right: 10%;
+
     }
 
     .lineup {
         width: 100%;
-        padding-right: 20px;
+        padding-right: 10%;
     }
 
     .ubicacion {
         width: 100%;
-        padding-right: 20px;
-       
+        padding-right: 10%;
+
     }
 
     iframe {
@@ -507,8 +510,8 @@ footer {
 
     footer {
         width: 100%;
-        padding-right: 20px;
-       
+        padding-right: 10%;
+
     }
 }
 
@@ -523,12 +526,13 @@ footer {
         justify-content: space-between;
 
 
-        /* background-color: navajowhite */
+
     }
 
     .logo {
         width: 100%;
-        max-width: 150px;
+        max-width: 100px;
+        display: flex;
     }
 
     nav ul {
@@ -572,7 +576,7 @@ footer {
         width: 18%;
         height: 100%;
         position: fixed;
-        top: 157px;
+        top: 100px;
         right: 0;
         background-image: none;
     }
@@ -587,7 +591,7 @@ footer {
 
     .main {
         width: 75%;
-        padding-right: 20px;
+        padding-right: 10%;
 
     }
 
@@ -598,17 +602,17 @@ footer {
 
     .entradas {
         width: 75%;
-        padding-right: 20px;
+        padding-right: 10%;
     }
 
     .lineup {
         width: 75%;
-        padding-right: 20px;
+        padding-right: 10%;
     }
 
     .ubicacion {
         width: 75%;
-        padding-right: 20px;
+        padding-right: 10%;
     }
 
     iframe {
@@ -617,7 +621,7 @@ footer {
     }
 
     footer {
-        width: 75%;
+        width: 100%;
         padding-right: 20px;
-}
+    }
 }
