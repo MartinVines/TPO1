@@ -1,0 +1,607 @@
+html {
+    scroll-behavior: smooth;
+    /* min-width: 600px; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+
+}
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    /*font-family: 'Permanent Marker', cursive;
+    /* sacado de googlefonts tambien hay en html
+    https://fonts.google.com/specimen/Permanent+Marker */
+}
+
+/* Paleta de colores aprox https://www.blissworld.com/ */
+
+header,
+main,
+aside {
+    padding: 0em;
+
+}
+
+header {
+
+    background-color: rgb(255, 255, 255,0.8);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    animation: spin 5s infinite linear;
+    display: none;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+nav {
+    float: left;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    float: left;
+    margin-bottom: 0px;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0%;
+}
+
+nav ul a:hover {
+    color: #d37f11;
+    font-size: 1.1em;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(204, 4, 225, 255);
+
+}
+
+/* *****************************
+menu hamburguesa responsive - inicio
+**************************** */
+
+.menu ul {
+    display: block;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+#menuHamburguesa {
+    display: block;
+}
+
+#menuHamburguesa-check:not(:checked)~nav {
+    display: none;
+}
+
+#menuHamburguesa-check:checked~nav {
+    display: block;
+}
+
+#menuHamburguesa-check {
+    display: none;
+}
+
+#menuHamburguesa:hover {
+    color: aqua;
+}
+
+#menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
+    display: none;
+}
+
+#menuHamburguesa-check:checked~label #menuHamburguesa-cerrar {
+    display: block;
+}
+
+#menuHamburguesa-check:not(:checked)~label #menuHamburguesa-abrir {
+    display: block;
+}
+
+#menuHamburguesa-check:not(:checked)~label #menuHamburguesa-cerrar {
+    display: none;
+}
+
+/* *****************************
+menu hamburguesa responsive - FIN
+**************************** */
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-color: white;
+    font-size: 0.4em;
+    flex-wrap: nowrap;
+
+}
+
+.main {
+    margin-top: 5%;
+    margin-left: 0%;
+    padding-left: 10%;
+
+    flex-grow: 1;
+    flex-direction: row;
+    padding-top: 15%;
+padding-bottom: 10%;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+
+main h1 {
+    color: azure;
+    font-size: 2.5em;
+}
+
+.aside {
+
+    padding-left: 7%;
+    width: 100%;
+}
+
+.publicidad-vertical {
+    display: none;
+}
+.publicidad-horizontal{
+    display: flex;
+    width: 100%;
+    
+}
+
+.lineup {
+    height: auto;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("cerca-grabacion-video-telefono-inteligente-concierto-imagen-entonada-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    width: 100%;
+    flex-direction: colum;
+    text-align: center;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    animation: animate_bounce 3'' timing-function 3 iteration-count direction fill-mode;
+}
+
+.lineup h1 {
+    color: azure;
+    font-size: 3em;
+}
+
+.lineup h2 {
+    color: azure;
+    font-size: 2.5em;
+}
+
+.lineup p {
+    color: azure;
+    font-size: 2em;
+}
+
+.entradas {
+    height: auto;
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.1)), url("par-pie-multitud-festival-musica-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    padding-left: 10%;
+    padding-bottom: 10%;
+
+    width: 100%;
+}
+
+.entradas h1 {
+    color: azure;
+    font-size: 1em;
+}
+
+.entradas label {
+    color: azure;
+    font-size: 1em;
+}
+
+.ubicacion {
+    height: auto;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("festival-musica-verano-que-atrae-mucha-gente-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    padding-left: 10%;
+padding-bottom: 10%;
+    width: 100%;
+
+    text-align: center;
+
+}
+
+iframe {
+    width: 90%;
+    height: 360px;
+}
+
+.ubicacion h1 {
+    color: azure;
+    font-size: 3em;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url("audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+padding-bottom: 10%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+.contacto h1 {
+    color: azure;
+    font-size: 2em;
+}
+
+.contacto label {
+    color: azure;
+    font-size: 2em;
+}
+.formulario{
+    width: 100%;
+}
+.form{
+    width: 80%;
+}
+footer ul {
+    color: rgba(131, 3, 151, 0.839);
+    text-decoration: none;
+}
+
+footer {
+    background-color: white;
+    /* margin-left: ; */
+    padding-left: 5% ;
+    display: flex;
+    /*  grid-column-start: 1;
+    grid-column-end: 6; 
+    grid-area: footer; */
+    border-style: none;
+    min-height: 20px;
+    /*margin: 0.1rem;*/
+    width: 100%;
+    min-width: 5em;
+    font-size: medium;
+   
+}
+
+#footer ul {
+
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(204, 4, 225, 255);
+    display: inline-flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+    column-gap: 1em;
+
+}
+
+#footer ul a:hover {
+    color: violet;
+    font-size: 2em;
+}
+
+#footer a {
+    text-decoration: none;
+    font-size: 1.5em;
+    list-style-type: none;
+
+}
+
+
+
+#form {
+
+    /*background-color: gray;*/
+    color: aliceblue;
+    /* grid-column-start: 1;
+    grid-column-end: 6; 
+    grid-area: footer; */
+    border-style: none;
+    border: none;
+    min-height: 20px;
+    margin: 0.5rem;
+    min-width: 5rem;
+    display: inline;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        background-color: white;
+
+    }
+
+    header {
+        background-color: rgb(255, 255, 255, 0.8);
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: flex;
+        width: 100%;
+        position: fixed;
+        top: 0;
+
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        font-size: 1.73em;
+
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu ul li {
+        display: block;
+    }
+
+    .menu ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+
+    #menuHamburguesa {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~nav {
+        display: none;
+    }
+
+    #menuHamburguesa-check:checked~nav {
+        display: block;
+    }
+
+    #menuHamburguesa-check {
+        display: none;
+    }
+
+    #menuHamburguesa:hover {
+        color: aqua;
+    }
+
+    #menuHamburguesa-check:checked~label #menuHamburguesa-abrir {
+        display: none;
+    }
+
+    #menuHamburguesa-check:checked~label #menuHamburguesa-cerrar {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~label #menuHamburguesa-abrir {
+        display: block;
+    }
+
+    #menuHamburguesa-check:not(:checked)~label #menuHamburguesa-cerrar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        padding-right: 10%;
+
+    }
+
+    .contacto {
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .entradas {
+        width: 100%;
+        padding-right: 10%;
+
+    }
+
+    .lineup {
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    .ubicacion {
+        width: 100%;
+        padding-right: 10%;
+
+    }
+
+    iframe {
+        width: 90%;
+        height: 480px;
+    }
+
+    footer {
+        width: 100%;
+        padding-right: 10%;
+
+    }
+}
+
+@media (min-width: 1023px) {
+    .container {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+background-color: white;
+
+
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 100px;
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        font-size: 1.73em;
+
+    }
+
+    nav li {
+        padding: 0 .5em;
+
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    #menuHamburguesa,
+    #menu-check {
+        display: none;
+    }
+
+    #menuHamburguesa-check:not(:checked)~nav {
+        display: block;
+    }
+
+    #menuHamburguesa-check:checked~nav {
+        display: block;
+    }
+
+    .aside {
+        background-color: white;
+        flex-direction: row;
+        padding-top: 25px;
+        padding-left: 2%;
+        padding-right: 0%;
+        width: 18%;
+        height: 100%;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        background-image: none;
+    }
+
+    .publicidad-horizontal {
+        display: none;
+    }
+
+    .publicidad-vertical {
+        display: flex;
+    }
+
+    .main {
+        width: 70%;
+        padding-right: 10%;
+
+    }
+
+    .contacto {
+        width: 70%;
+        padding-right: 10%;
+    }
+    
+    .entradas {
+        width: 70%;
+        padding-right: 10%;
+    }
+
+    .lineup {
+        width: 70%;
+        padding-right: 10%;
+    }
+
+    .ubicacion {
+        width: 70%;
+        padding-right: 10%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 480px;
+    }
+
+    footer {
+        width: 70%;
+        padding-right: 10%;
+    }
+}
