@@ -3,7 +3,6 @@ html {
     /* min-width: 600px; */
     font-family: 'Quicksand', sans-serif;
     font-weight: 200;
-
 }
 
 body {
@@ -12,25 +11,16 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 3em;
-    /*font-family: 'Permanent Marker', cursive;
-    /* sacado de googlefonts tambien hay en html
-    https://fonts.google.com/specimen/Permanent+Marker */
 }
-
-/* Paleta de colores aprox https://www.blissworld.com/ */
 
 header,
 main,
 aside {
     padding: 0em;
-
 }
 
 header {
-
     background-color: rgb(255, 255, 255,0.8);
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,11 +151,10 @@ menu hamburguesa responsive - FIN
     margin-top: 5%;
     margin-left: 0%;
     padding-left: 10%;
-
     flex-grow: 1;
     flex-direction: row;
     padding-top: 15%;
-padding-bottom: 10%;
+    padding-bottom: 10%;
     height: auto;
     width: 100%;
     background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("grupo-amigos-bailando-dia-soleado-al-aire-libre-min.jpg");
@@ -181,7 +170,6 @@ main h1 {
 }
 
 .aside {
-
     padding-left: 7%;
     width: 100%;
 }
@@ -189,10 +177,10 @@ main h1 {
 .publicidad-vertical {
     display: none;
 }
+
 .publicidad-horizontal{
     display: flex;
     width: 100%;
-    
 }
 
 .lineup {
@@ -201,13 +189,12 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
     width: 100%;
-    flex-direction: colum;
+    flex-direction: column;
     text-align: center;
     padding-left: 10%;
     padding-bottom: 10%;
-    animation: animate_bounce 3'' timing-function 3 iteration-count direction fill-mode;
+    /*animation: animate_bounce 3'' timing-function 3 iteration-count direction fill-mode;*/
 }
 
 .lineup h1 {
@@ -231,21 +218,19 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
     padding-left: 10%;
     padding-bottom: 10%;
-
     width: 100%;
 }
 
 .entradas h1 {
     color: azure;
-    font-size: 1em;
+    font-size: 1.7em;
 }
 
 .entradas label {
     color: azure;
-    font-size: 1em;
+    font-size: 1.8em;
 }
 
 .ubicacion {
@@ -254,13 +239,10 @@ main h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
     padding-left: 10%;
-padding-bottom: 10%;
+    padding-bottom: 10%;
     width: 100%;
-
     text-align: center;
-
 }
 
 iframe {
@@ -281,26 +263,29 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-padding-bottom: 10%;
+    padding-bottom: 10%;
     padding-left: 10%;
     width: 100%;
 }
 
 .contacto h1 {
     color: azure;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .contacto label {
     color: azure;
-    font-size: 2em;
+    font-size: 1.8em;
 }
+
 .formulario{
     width: 100%;
 }
+
 .form{
     width: 80%;
 }
+
 footer ul {
     color: rgba(131, 3, 151, 0.839);
     text-decoration: none;
@@ -308,15 +293,10 @@ footer ul {
 
 footer {
     background-color: white;
-    /* margin-left: ; */
     padding-left: 5% ;
     display: flex;
-    /*  grid-column-start: 1;
-    grid-column-end: 6; 
-    grid-area: footer; */
     border-style: none;
     min-height: 20px;
-    /*margin: 0.1rem;*/
     width: 100%;
     min-width: 5em;
     font-size: medium;
@@ -324,7 +304,6 @@ footer {
 }
 
 #footer ul {
-
     text-decoration: none;
     list-style-type: none;
     color: rgba(204, 4, 225, 255);
@@ -333,7 +312,6 @@ footer {
     align-items: left;
     justify-content: space-between;
     column-gap: 1em;
-
 }
 
 #footer ul a:hover {
@@ -345,18 +323,10 @@ footer {
     text-decoration: none;
     font-size: 1.5em;
     list-style-type: none;
-
 }
 
-
-
 #form {
-
-    /*background-color: gray;*/
     color: aliceblue;
-    /* grid-column-start: 1;
-    grid-column-end: 6; 
-    grid-area: footer; */
     border-style: none;
     border: none;
     min-height: 20px;
@@ -364,24 +334,19 @@ footer {
     min-width: 5rem;
     display: inline;
     font-size: medium;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
     text-align: center;
     align-items: center;
 }
-
-
 
 @media (min-width: 768px) {
     .container {
         flex-direction: column;
         background-color: white;
-
     }
 
     header {
         background-color: rgb(255, 255, 255, 0.8);
-
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -458,7 +423,6 @@ footer {
     .main {
         width: 100%;
         padding-right: 10%;
-
     }
 
     .contacto {
@@ -469,7 +433,6 @@ footer {
     .entradas {
         width: 100%;
         padding-right: 10%;
-
     }
 
     .lineup {
@@ -480,7 +443,6 @@ footer {
     .ubicacion {
         width: 100%;
         padding-right: 10%;
-
     }
 
     iframe {
@@ -491,7 +453,6 @@ footer {
     footer {
         width: 100%;
         padding-right: 10%;
-
     }
 }
 
@@ -504,9 +465,7 @@ footer {
     header {
         flex-direction: row;
         justify-content: space-between;
-background-color: white;
-
-
+        background-color: white;
     }
 
     .logo {
@@ -518,12 +477,10 @@ background-color: white;
     nav ul {
         display: flex;
         font-size: 1.73em;
-
     }
 
     nav li {
         padding: 0 .5em;
-
     }
 
     .menu {
@@ -572,7 +529,6 @@ background-color: white;
     .main {
         width: 70%;
         padding-right: 10%;
-
     }
 
     .contacto {
